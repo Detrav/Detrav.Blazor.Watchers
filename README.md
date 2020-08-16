@@ -4,7 +4,7 @@ This is a library for tracking changes in the `INotifyPropertyChanged` propertie
 
 ## DEMO
 
-[Demo page](https://detrav.github.io/Detrav.Blazor.Watchers/Demo/index.html) on the Github!
+[Demo page](https://detrav.github.io/Detrav.Blazor.Watchers/Demo/) on the Github!
 
 ## Usage
 
