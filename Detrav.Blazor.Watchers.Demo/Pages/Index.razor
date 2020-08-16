@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+<p>
+    Welcome to the Demo app.
+</p>
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                Email
+            </td>
+            <td>
+                Last Sign In
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Users.Items)
+        {
+            <UserRow User="@user" />
+        }
+    </tbody>
+</table>
+
+<WatchItems For="@this" Source="Users?.Items" />
+
+
+@code{
+    [Inject]
+    public UsersStore Users { get; set; }
+}
+

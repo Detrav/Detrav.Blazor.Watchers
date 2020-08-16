@@ -1,0 +1,14 @@
+﻿<tr>
+    <td>@User.Name</td>
+    <td>@User.Email</td>
+    <td>@User.LastLogin.ToLongTimeString()</td>
+</tr>
+
+<WatchProperty For="@this" Model="@User" />
+
+@code {
+
+    [Parameter]
+    public UserVM User { get; set; }
+
+}
